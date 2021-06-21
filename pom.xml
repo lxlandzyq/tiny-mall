@@ -22,6 +22,7 @@
         <hutool.version>4.5.7</hutool.version>
         <mysql-connector.version>8.0.16</mysql-connector.version>
         <docker.host>http://192.168.3.101:2375</docker.host>
+        <jjwt.version>0.9.0</jjwt.version>
         <docker.maven.plugin.version>1.2.2</docker.maven.plugin.version>
     </properties>
     <dependencies>
@@ -97,6 +98,16 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>${mysql-connector.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+        <!--JWT(Json Web Token)登录支持-->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>${jjwt.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -135,14 +146,7 @@
                 </configuration>
             </plugin>
         </plugins>
-        <resources>
-            <resource>
-                <directory>src/main/java</directory>
-                <includes>
-                    <include>**/*.xml</include>
-                </includes>
-            </resource>
-        </resources>
+
     </build>
 
 </project>
