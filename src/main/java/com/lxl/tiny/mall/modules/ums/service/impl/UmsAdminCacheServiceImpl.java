@@ -1,20 +1,41 @@
 package com.lxl.tiny.mall.modules.ums.service.impl;
 
+import cn.hutool.core.collection.CollUtil;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.lxl.tiny.mall.common.service.RedisService;
+import com.lxl.tiny.mall.modules.ums.mapper.UmsAdminMapper;
 import com.lxl.tiny.mall.modules.ums.model.UmsAdmin;
+import com.lxl.tiny.mall.modules.ums.model.UmsAdminRoleRelation;
 import com.lxl.tiny.mall.modules.ums.model.UmsResource;
 import com.lxl.tiny.mall.modules.ums.service.UmsAdminCacheService;
+import com.lxl.tiny.mall.modules.ums.service.UmsAdminRoleRelationService;
+import com.lxl.tiny.mall.modules.ums.service.UmsAdminService;
+import io.swagger.annotations.ApiModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
+/**
+ * 后台用户缓存管理Service实现类
+ */
 @Service
 public class UmsAdminCacheServiceImpl implements UmsAdminCacheService {
 
     @Autowired
     private RedisService redisService;
+
+    @Autowired
+    private UmsAdminService adminService;
+
+    @Autowired
+    private UmsAdminMapper adminMapper;
+
+
+    @Autowired
+    private UmsAdminRoleRelationService umsAdminRoleRelationService;
 
     @Value("${redis.database}")
     private String REDIS_DATABASE;
@@ -24,6 +45,55 @@ public class UmsAdminCacheServiceImpl implements UmsAdminCacheService {
     private String REDIS_KEY_ADMIN;
     @Value("${redis.key.resourceList}")
     private String REDIS_KEY_RESOURCE_LIST;
+
+    @Override
+    public void delAdmin(Long adminId) {
+        UmsAdmin admin = adminService.getById(adminId);
+        if (admin != null){
+            String key = REDIS_DATABASE + ":" + REDIS_KEY_ADMIN + ":" + admin.getUsername();
+            redisService.del(key);
+        }
+    }
+
+    @Override
+    public void delResourceList(Long adminId) {
+        String key = REDIS_DATABASE + ":" + REDIS_KEY_RESOURCE_LIST + ":" + adminId;
+        redisService.del(key);
+    }
+
+    @Override
+    public void delResourceListByRole(Long roleId) {
+        QueryWrapper<UmsAdminRoleRelation> wrapper = new QueryWrapper<>();
+        wrapper.lambda().in(UmsAdminRoleRelation ::getRoleId,roleId);
+        List<UmsAdminRoleRelation> relationList = umsAdminRoleRelationService.list(wrapper);
+        if (CollUtil.isNotEmpty(relationList)){
+            String keyPrefix = REDIS_DATABASE + ":" + REDIS_KEY_RESOURCE_LIST + ":";
+            List<String> keys = relationList.stream().map(relation -> keyPrefix + relation.getAdminId()).collect(Collectors.toList());
+            redisService.del(keys);
+        }
+    }
+
+    @Override
+    public void delResourceListByRoleIds(List<Long> roleIds) {
+        QueryWrapper<UmsAdminRoleRelation> wrapper = new QueryWrapper<>();
+        wrapper.lambda().in(UmsAdminRoleRelation::getRoleId,roleIds);
+        List<UmsAdminRoleRelation> relationList = umsAdminRoleRelationService.list(wrapper);
+        if (CollUtil.isNotEmpty(relationList)) {
+            String keyPrefix = REDIS_DATABASE + ":" + REDIS_KEY_RESOURCE_LIST + ":";
+            List<String> keys = relationList.stream().map(relation -> keyPrefix + relation.getAdminId()).collect(Collectors.toList());
+            redisService.del(keys);
+        }
+    }
+
+    @Override
+    public void delResourceListByResource(Long resourceId) {
+        List<Long> adminIdList = adminMapper.getAdminIdList(resourceId);
+        if (CollUtil.isNotEmpty(adminIdList)){
+            String keyPrefix = REDIS_DATABASE + ":" + REDIS_KEY_RESOURCE_LIST + ":";
+            List<String> keys = adminIdList.stream().map(adminId -> keyPrefix + adminId).collect(Collectors.toList());
+            redisService.del(keys);
+        }
+    }
 
     @Override
     public UmsAdmin getAdmin(String username) {

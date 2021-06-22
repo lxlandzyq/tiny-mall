@@ -18,6 +18,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 public class MallSecurityConfig extends SecurityConfig {
     @Autowired
     private UmsAdminService adminService;
+
     @Bean
     public UserDetailsService userDetailsService() {
         //获取登录用户信息
