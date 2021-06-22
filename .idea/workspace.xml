@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8eeb330-d35f-48eb-8863-016e36a6609f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/config/MallSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/config/MallSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/service/impl/UmsResourceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/service/impl/UmsResourceServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiny-mall.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tiny-mall.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -16,10 +17,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/config/MallSecurityConfig.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/model/UmsMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="44" column="45" lean-forward="true" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="45" />
+            <state relative-caret-position="265">
+              <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -28,19 +29,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/service/impl/UmsAdminCacheServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/model/UmsResourceCategory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2403">
-              <caret line="105" column="44" lean-forward="true" selection-start-line="105" selection-start-column="44" selection-end-line="105" selection-end-column="44" />
+            <state relative-caret-position="270">
+              <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/mapper/UmsAdminRoleRelationMapper.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/model/UmsRole.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="8" column="43" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="43" />
+              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,19 +53,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UmsAdminRoleRelationMapper.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/model/UmsRoleMenuRelation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/service/UmsResourceService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="189">
+              <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,10 +65,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/security/component/DynamicSecurityService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/model/UmsRoleResourceRelation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/dto/UmsAdminLoginParam.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="297">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,50 +89,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/security/component/DynamicSecurityMetadaSource.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/dto/UmsAdminParam.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+            <state relative-caret-position="108">
+              <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#695#696#0" expanded="true" />
-                <element signature="e#770#771#0" expanded="true" />
-                <element signature="e#574#575#0" expanded="true" />
-                <element signature="e#601#602#0" expanded="true" />
-                <element signature="e#663#664#0" expanded="true" />
-                <element signature="e#691#692#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/dto/UmsMenuNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/security/component/DynamicSecurityFilter.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/dto/UpdateAdminPasswordParam.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="57" column="47" lean-forward="true" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
+            <state relative-caret-position="324">
+              <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#609#610#0" expanded="true" />
-                <element signature="e#636#637#0" expanded="true" />
-                <element signature="e#718#719#0" expanded="true" />
-                <element signature="e#745#746#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/security/component/DynamicAccessDecisionManager.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="773">
-              <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1631#1632#0" expanded="true" />
-                <element signature="e#1693#1694#0" expanded="true" />
-                <element signature="e#1720#1721#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="486">
+              <caret line="114" column="21" selection-start-line="114" selection-start-column="21" selection-end-line="114" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -156,16 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/TinyMallApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/model/UmsAdmin.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/common/service/RedisService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/common/service/impl/RedisServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/mapper/UmsAdminMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/model/UmsResource.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application-dev.yml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper.ums/UmsAdminMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/common/config/BaseRedisConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/domain/AdminUserDetails.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/config/RedisConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/security/config/SecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/service/UmsAdminService.java" />
@@ -188,7 +181,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/security/aspect/RedisCacheAspect.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/security/config/IgnoreUrlsConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/security/util/SpringUtil.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/security/util/JwtTokenUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/security/component/RestfulAccessDeniedHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/security/component/RestAuthenticationEntryPoint.java" />
@@ -207,6 +199,17 @@
         <option value="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/security/component/DynamicSecurityMetadaSource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/security/component/DynamicAccessDecisionManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/security/component/DynamicSecurityFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/model/UmsAdminLoginLog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/model/UmsMenu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/model/UmsResourceCategory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/model/UmsRole.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/model/UmsRoleMenuRelation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/model/UmsRoleResourceRelation.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/dto/UmsAdminLoginParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/dto/UmsAdminParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/dto/UmsMenuNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/dto/UpdateAdminPasswordParam.java" />
       </list>
     </option>
   </component>
@@ -218,7 +221,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="600" />
+    <option name="x" value="901" />
     <option name="y" value="23" />
     <option name="width" value="1241" />
     <option name="height" value="1057" />
@@ -358,6 +361,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mall" type="462c0819:PsiDirectoryNode" />
               <item name="ums" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tiny-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tiny-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="ums" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -390,65 +403,6 @@
               <item name="ums" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tiny-mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tiny-mall" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tiny-mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tiny-mall" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tiny-mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tiny-mall" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-              <item name="aspect" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tiny-mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tiny-mall" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-              <item name="component" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tiny-mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tiny-mall" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tiny-mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tiny-mall" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tiny-mall" type="b2602c69:ProjectViewProjectNode" />
@@ -489,7 +443,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1624347628070" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1624360511415" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -543,18 +497,17 @@
       <workItem from="1624035179055" duration="11067000" />
       <workItem from="1624101680098" duration="11763000" />
       <workItem from="1624203861394" duration="8798000" />
-      <workItem from="1624267836406" duration="15194000" />
+      <workItem from="1624267836406" duration="19101000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23996000" />
+    <option name="totallyTimeSpent" value="27903000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="600" y="23" width="1241" height="1057" extended-state="0" />
-    <editor active="true" />
+    <frame x="901" y="23" width="1241" height="1057" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.10258549" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24770643" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -577,6 +530,7 @@
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" />
+      <window_info anchor="right" id="Bean Validation" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -588,7 +542,7 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10258549" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3002502" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -598,7 +552,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32953367" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31088084" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31088084" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -626,64 +580,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UmsAdminMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="54" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/mapper/UmsAdminMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/mapper/UmsResourceMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/service/impl/UmsAdminServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1512">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/common/api/IErrorCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/common/api/ResultCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/common/api/CommonResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/common/exception/ApiException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -869,13 +765,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/security/util/JwtTokenUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -1045,7 +934,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/service/UmsResourceService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1054,14 +943,121 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/security/component/DynamicSecurityFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="57" column="47" lean-forward="true" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
+        <state relative-caret-position="260">
+          <caret line="61" column="27" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#609#610#0" expanded="true" />
             <element signature="e#636#637#0" expanded="true" />
             <element signature="e#718#719#0" expanded="true" />
             <element signature="e#745#746#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/model/UmsAdminLoginLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/model/UmsMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/model/UmsResourceCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/model/UmsRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/model/UmsRoleMenuRelation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/model/UmsRoleResourceRelation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="114" column="21" selection-start-line="114" selection-start-column="21" selection-end-line="114" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/dto/UmsAdminLoginParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/dto/UmsAdminParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/dto/UmsMenuNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lxl/tiny/mall/modules/ums/dto/UpdateAdminPasswordParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
