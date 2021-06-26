@@ -15,3 +15,5 @@ import org.springframework.stereotype.Service;
 @Service
 public class UmsRoleResourceRelationServiceImpl extends ServiceImpl<UmsRoleResourceRelationMapper, UmsRoleResourceRelation> implements UmsRoleResourceRelationService {
 
+}
+

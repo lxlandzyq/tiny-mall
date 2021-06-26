@@ -19,12 +19,13 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.PriorityQueue;
 
 /**
  * 后台角色管理Service实现类
  */
 @Service
-public class UmsRoleServiceImple extends ServiceImpl<UmsRoleMapper, UmsRole> implements UmsRoleService {
+public class UmsRoleServiceImpl extends ServiceImpl<UmsRoleMapper, UmsRole> implements UmsRoleService {
     @Autowired
     private UmsAdminCacheService adminCacheService;
     @Autowired
@@ -67,6 +68,7 @@ public class UmsRoleServiceImple extends ServiceImpl<UmsRoleMapper, UmsRole> imp
 
     @Override
     public List<UmsMenu> getMenuList(Long adminId) {
+
         return menuMapper.getMenuList(adminId);
     }
 

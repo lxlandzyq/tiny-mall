@@ -33,7 +33,6 @@ public class UmsAdminCacheServiceImpl implements UmsAdminCacheService {
     @Autowired
     private UmsAdminMapper adminMapper;
 
-
     @Autowired
     private UmsAdminRoleRelationService umsAdminRoleRelationService;
 
