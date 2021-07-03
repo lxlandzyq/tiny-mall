@@ -14,7 +14,7 @@ public class SwaggerConfig extends BaseSwaggerConfig {
     @Override
     public SwaggerProperties swaggerProperties() {
         return SwaggerProperties.builder()
-                .apiBasePackage("com.lxl.")
+                .apiBasePackage("com.lxl.tiny.mall.modules.ums")
                 .title("tiny-mall项目骨架")
                 .description("tiny-mall项目骨架相关接口文档")
                 .contactName("lxl")

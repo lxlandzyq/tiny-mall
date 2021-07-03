@@ -19,7 +19,7 @@ import java.util.List;
 public abstract class BaseSwaggerConfig {
 
     @Bean
-    public Docket createRestApi(){
+    public Docket createRestApi() {
         SwaggerProperties swaggerProperties = swaggerProperties();
         Docket docket = new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo(swaggerProperties))
@@ -27,12 +27,13 @@ public abstract class BaseSwaggerConfig {
                 .apis(RequestHandlerSelectors.basePackage(swaggerProperties.getApiBasePackage()))
                 .paths(PathSelectors.any())
                 .build();
-        if (swaggerProperties.isEnableSecurity()){
+        if (swaggerProperties.isEnableSecurity()) {
             docket.securitySchemes(securitySchemes()).securityContexts(securityContexts());
         }
         return docket;
     }
-    private ApiInfo apiInfo(SwaggerProperties swaggerProperties){
+
+    private ApiInfo apiInfo(SwaggerProperties swaggerProperties) {
         return new ApiInfoBuilder()
                 .title(swaggerProperties.getTitle())
                 .description(swaggerProperties.getDescription())
@@ -41,28 +42,29 @@ public abstract class BaseSwaggerConfig {
                 .build();
     }
 
-    private List<ApiKey> securitySchemes(){
-        // 设置请求头信息
+    private List<ApiKey> securitySchemes() {
+        //设置请求头信息
         List<ApiKey> result = new ArrayList<>();
-        ApiKey apiKey = new ApiKey("Authorization","Authorization", "header");
+        ApiKey apiKey = new ApiKey("Authorization", "Authorization", "header");
         result.add(apiKey);
         return result;
     }
 
-    private List<SecurityContext> securityContexts(){
+    private List<SecurityContext> securityContexts() {
         //设置需要登录认证的路径
         List<SecurityContext> result = new ArrayList<>();
         result.add(getContextByPath("/*/.*"));
         return result;
     }
 
-    private SecurityContext getContextByPath(String pathRegex){
+    private SecurityContext getContextByPath(String pathRegex) {
         return SecurityContext.builder()
                 .securityReferences(defaultAuth())
                 .forPaths(PathSelectors.regex(pathRegex))
                 .build();
     }
-    private List<SecurityReference> defaultAuth(){
+
+    private List<SecurityReference> defaultAuth() {
         List<SecurityReference> result = new ArrayList<>();
         AuthorizationScope authorizationScope = new AuthorizationScope("global", "accessEverything");
         AuthorizationScope[] authorizationScopes = new AuthorizationScope[1];
@@ -72,7 +74,7 @@ public abstract class BaseSwaggerConfig {
     }
 
     /**
-     * 自定义swagger配置
+     * 自定义Swagger配置
      */
     public abstract SwaggerProperties swaggerProperties();
 }
