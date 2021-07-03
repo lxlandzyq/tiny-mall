@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="tiny-mall" target="11" />
+      <module name="tiny-mall" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
